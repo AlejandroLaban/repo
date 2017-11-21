@@ -1,0 +1,12 @@
+version: '2'
+services:
+  websphere9:
+    image: 'ibmcom/websphere-traditional:latest'
+    hostname: 'websphere9'
+    ports:
+      - '9060:9060'
+      - '9043:9043'
+      - '9080:9080'
+      - '9443:9443'
+#    volumes: 
+#      - './tmp:/tmp'
