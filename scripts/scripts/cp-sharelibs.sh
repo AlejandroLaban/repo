@@ -1,4 +1,5 @@
 #!/bin/bash
 
 echo ############ CP SHARELIBS ################
+mkdir -p $DEPENDENCIES_DIRECTORY_TO
 cp $DEPENDENCIES_DIRECTORY_FROM $DEPENDENCIES_DIRECTORY_TO

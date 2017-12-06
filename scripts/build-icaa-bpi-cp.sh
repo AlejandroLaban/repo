@@ -9,9 +9,14 @@ trap '[ "$?" -eq 0 ] || read -p "Looks like something went wrong in step ´$STEP
 echo # BUILDING ICAA
 
 #ICAA
+cd $CURRENT_DIR
 . ./scripts/build-icaa.sh
 
 echo # BUILDING BPI
 
 #BPI
+cd $CURRENT_DIR
 . ./scripts/build-bpi.sh
+
+cd $CURRENT_DIR
+. ./cp-all.sh

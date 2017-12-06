@@ -1,0 +1,10 @@
+version: '3'
+services:
+  wlp_bpi:
+    image: wlp_bpi:latest
+    ports:
+    - 9080:9080
+    - 9443:9443
+     #- '7777:7777'
+    #environment:
+    #- JVM_ARGS='-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=7777'
