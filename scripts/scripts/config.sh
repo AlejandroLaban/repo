@@ -29,10 +29,10 @@ export PARENT=-parent
 export REST=-rest
 
 
-export PROFILE=sit
-export MAVEN_PARAMS="-DskipTests=true -P${PROFILE}"
+export PROFILE=dev
+export MAVEN_PARAMS="-o -DskipTests=true -P${PROFILE}"
 
-export OUTPUT_DIRECTORY=/D/TCS/bpi2/output
+export OUTPUT_DIRECTORY=/D/bpi2/output
 
 export DEPENDENCIES_DIRECTORY_FROM=$SOURCES_BASE_PATH/$BPI/$BPI$PARENT/target/dist/lib/*.jar
 export DEPENDENCIES_DIRECTORY_TO=$OUTPUT_DIRECTORY/libs
