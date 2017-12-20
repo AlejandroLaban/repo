@@ -9,12 +9,13 @@ export SCRIPT_PATH=${PWD}
 
 export SOURCES_BASE_PATH=$CURRENT_DIR
 
-export SOURCES_BASE_PATH=/d/bpi2
+export SOURCES_BASE_PATH=/d/TCS/bpi2
 
 #LEGACY
 export CORE=digital-channels-core
 export MQ=digital-channels-mq
 export PROXY=digital-channels-proxy
+export EXCELSYS_MIGRATION=excelsys-migration
 
 export POM=-pom
 
@@ -30,15 +31,15 @@ export REST=-rest
 
 
 export PROFILE=dev
-export MAVEN_PARAMS="-o -DskipTests=true -P${PROFILE}"
+export MAVEN_PARAMS="-DskipTests=true -P${PROFILE}"
 
-export OUTPUT_DIRECTORY=/D/bpi2/output
+export OUTPUT_DIRECTORY=/D/TCS/bpi2/output
 
 export DEPENDENCIES_DIRECTORY_FROM=$SOURCES_BASE_PATH/$BPI/$BPI$PARENT/target/dist/lib/*.jar
 export DEPENDENCIES_DIRECTORY_TO=$OUTPUT_DIRECTORY/libs
 
-export CONFIG_BPI_DIRECTORY_FROM=$SOURCES_BASE_PATH/$BPI/$BPI$PARENT/src/conf
-export CONFIG_BPI_DIRECTORY_TO=$OUTPUT_DIRECTORY/config/apps/digital-channels/bpi-x/api
+export CONFIG_BPI_DIRECTORY_FROM=$SOURCES_BASE_PATH/$BPI/$BPI$PARENT/target/dist/conf/apps
+export CONFIG_BPI_DIRECTORY_TO=$OUTPUT_DIRECTORY/config
 
 export CONFIG_ICAA_DIRECTORY_FROM=$SOURCES_BASE_PATH/$ICAA/$ICAA_CORE/src/conf
 export CONFIG_ICAA_DIRECTORY_TO=$OUTPUT_DIRECTORY/config/apps/digital-channels/icaa/api
@@ -46,6 +47,6 @@ export CONFIG_ICAA_DIRECTORY_TO=$OUTPUT_DIRECTORY/config/apps/digital-channels/i
 export WAR_FROM=$SOURCES_BASE_PATH/$BPI/$BPI$PARENT/target/dist/bpi-api-1.0.0.war
 export WAR_TO=$OUTPUT_DIRECTORY/war
 
-export DOCKER_PATH=$SCRIPT_PATH/docker
+#export DOCKER_PATH=$SCRIPT_PATH/docker
 export ROOT=/c/
 

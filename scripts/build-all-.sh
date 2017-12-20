@@ -17,9 +17,15 @@ cd $CURRENT_DIR
 cd $CURRENT_DIR
 . ./scripts/build-mq.sh
 
+#EXCELSYS
+cd $CURRENT_DIR
+. ./scripts/build-excelsys.sh
+
 #PROXY
 cd $CURRENT_DIR
 . ./scripts/build-proxy.sh
+
+
 
 echo # BUILDING ICAA
 

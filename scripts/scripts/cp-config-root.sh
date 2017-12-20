@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo ############ CP CONFIG ICAA ################
-cp -R $OUTPUT_DIRECTORY/config $ROOT
+echo ############ CP CONFIG ################
+cp -v -R $OUTPUT_DIRECTORY/config/apps $ROOT
