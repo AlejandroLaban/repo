@@ -1,2 +1,4 @@
 scripts/docker/image/files/driver/
 scripts/docker/image/files/output/
+
+*.log
